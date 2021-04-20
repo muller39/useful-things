@@ -1,0 +1,12 @@
+1. Как настроить в VSC запуск npm скриптов из package.json по клику во вкладке NPM SCRIPTS, чтобы в powershal использовалось nmp вместо auto:
+НА ПРИМЕРЕ АНГУЛЯРА (!)
+а) Установить в package.json скрипты
+	"scripts": { 
+		"help": "nx help",
+	}
+
+б) You have several ways to start one of the script commands defined in your package.json.
+The first is to open a terminal in VS Code with Terminal -> New Terminal (CTRL+Shift+ö).
+Thereby, the terminal is conveniently started in your project’s working directory. You can simply run your script with npm run my-script.
+The second even more convenient option is to go to File -> Preferences -> Settings (CTRL+,) and to enable npm.enableScriptExplorer.
+VS Code will now automatically search for your package.json file and extract all commands from its scripts section.
